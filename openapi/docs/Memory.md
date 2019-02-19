@@ -1,0 +1,72 @@
+# Memory
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**OdataContext** | **string** | The OData description of a payload. | [optional] 
+**OdataEtag** | **string** | The current ETag of the resource. | [optional] 
+**OdataId** | **string** | The unique identifier for a resource. | 
+**OdataType** | **string** | The type of a resource. | 
+**Actions** | [**Actions2**](Actions_2.md) |  | [optional] 
+**AllocationAlignmentMiB** | **int32** | The boundary which memory regions are allocated on, measured in mebibytes (MiB). | [optional] 
+**AllocationIncrementMiB** | **int32** | The size of the smallest unit of allocation for a memory region in mebibytes (MiB). | [optional] 
+**AllowedSpeedsMHz** | **[]int32** | Speed bins supported by this Memory. | [optional] 
+**Assembly** | [**IdRef**](idRef.md) |  | [optional] 
+**BaseModuleType** | [**BaseModuleType**](BaseModuleType.md) |  | [optional] 
+**BusWidthBits** | **int32** | Bus Width in bits. | [optional] 
+**CacheSizeMiB** | **int32** | Total size of the cache portion memory in MiB. | [optional] 
+**CapacityMiB** | **int32** | Memory Capacity in mebibytes (MiB). | [optional] 
+**ConfigurationLocked** | **bool** | Indicates that the configuration of this memory has been locked. | [optional] 
+**DataWidthBits** | **int32** | Data Width in bits. | [optional] 
+**Description** | **string** | Provides a description of this resource and is used for commonality  in the schema definitions. | [optional] 
+**DeviceID** | **string** | Device ID. | [optional] 
+**DeviceLocator** | **string** | Location of the Memory in the platform. | [optional] 
+**ErrorCorrection** | [**ErrorCorrection**](ErrorCorrection.md) |  | [optional] 
+**FirmwareApiVersion** | **string** | Version of API supported by the firmware. | [optional] 
+**FirmwareRevision** | **string** | Revision of firmware on the Memory controller. | [optional] 
+**FunctionClasses** | **[]string** | Function Classes by the Memory. | [optional] 
+**Id** | **string** | Uniquely identifies the resource within the collection of like resources. | 
+**IsRankSpareEnabled** | **bool** | Rank spare enabled status. | [optional] 
+**IsSpareDeviceEnabled** | **bool** | Spare device enabled status. | [optional] 
+**Links** | [**Links2**](Links_2.md) |  | [optional] 
+**Location** | [**Location**](Location.md) |  | [optional] 
+**LogicalSizeMiB** | **int32** | Total size of the logical memory in MiB. | [optional] 
+**Manufacturer** | **string** | The Memory manufacturer. | [optional] 
+**MaxTDPMilliWatts** | **[]int32** | Maximum TDPs in milli Watts. | [optional] 
+**MemoryDeviceType** | [**MemoryDeviceType**](MemoryDeviceType.md) |  | [optional] 
+**MemoryLocation** | [**MemoryLocation**](MemoryLocation.md) |  | [optional] 
+**MemoryMedia** | [**[]MemoryMedia**](MemoryMedia.md) | Media of this Memory. | [optional] 
+**MemorySubsystemControllerManufacturerID** | **string** | The manufacturer ID of the memory subsystem controller of this memory module. | [optional] 
+**MemorySubsystemControllerProductID** | **string** | The product ID of the memory subsystem controller of this memory module. | [optional] 
+**MemoryType** | [**MemoryType**](MemoryType.md) |  | [optional] 
+**Metrics** | [**IdRef**](idRef.md) |  | [optional] 
+**ModuleManufacturerID** | **string** | The manufacturer ID of this memory module. | [optional] 
+**ModuleProductID** | **string** | The product ID of this memory module. | [optional] 
+**Name** | **string** | The name of the resource or array element. | 
+**NonVolatileSizeMiB** | **int32** | Total size of the non-volatile portion memory in MiB. | [optional] 
+**Oem** | [**Oem**](Oem.md) |  | [optional] 
+**OperatingMemoryModes** | [**[]OperatingMemoryModes**](OperatingMemoryModes.md) | Memory modes supported by the Memory. | [optional] 
+**OperatingSpeedMhz** | **int32** | Operating speed of Memory in MHz or MT/s as appropriate. | [optional] 
+**PartNumber** | **string** | The product part number of this device. | [optional] 
+**PersistentRegionNumberLimit** | **int32** | Total number of persistent regions this Memory can support. | [optional] 
+**PersistentRegionSizeLimitMiB** | **int32** | Total size of persistent regions in mebibytes (MiB). | [optional] 
+**PersistentRegionSizeMaxMiB** | **int32** | Maximum size of a single persistent region in mebibytes (MiB). | [optional] 
+**PowerManagementPolicy** | [**PowerManagementPolicy**](PowerManagementPolicy.md) |  | [optional] 
+**RankCount** | **int32** | Number of ranks available in the Memory. | [optional] 
+**Regions** | [**[]RegionSet**](RegionSet.md) | Memory regions information within the Memory. | [optional] 
+**SecurityCapabilities** | [**SecurityCapabilities**](SecurityCapabilities.md) |  | [optional] 
+**SecurityState** | [**SecurityStates**](SecurityStates.md) |  | [optional] 
+**SerialNumber** | **string** | The product serial number of this device. | [optional] 
+**SpareDeviceCount** | **int32** | Number of unused spare devices available in the Memory. | [optional] 
+**Status** | [**Status**](Status.md) |  | [optional] 
+**SubsystemDeviceID** | **string** | Subsystem Device ID. | [optional] 
+**SubsystemVendorID** | **string** | SubSystem Vendor ID. | [optional] 
+**VendorID** | **string** | Vendor ID. | [optional] 
+**VolatileRegionNumberLimit** | **int32** | Total number of volatile regions this Memory can support. | [optional] 
+**VolatileRegionSizeLimitMiB** | **int32** | Total size of volatile regions in mebibytes (MiB). | [optional] 
+**VolatileRegionSizeMaxMiB** | **int32** | Maximum size of a single volatile region in mebibytes (MiB). | [optional] 
+**VolatileSizeMiB** | **int32** | Total size of the volitile portion memory in MiB. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
