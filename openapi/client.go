@@ -17,8 +17,10 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"log"
 	"mime/multipart"
 	"net/http"
+	"net/http/httputil"
 	"net/url"
 	"os"
 	"path/filepath"
@@ -147,7 +149,28 @@ func parameterToString(obj interface{}, collectionFormat string) string {
 
 // callAPI do the request.
 func (c *APIClient) callAPI(request *http.Request) (*http.Response, error) {
-	return c.cfg.HTTPClient.Do(request)
+
+	var response *http.Response
+	var responseErr error
+
+	if os.Getenv("TRACE_REDGOPHER") == "1" {
+
+		out, err := httputil.DumpRequest(request, true)
+		if err == nil {
+			log.Println(string(out))
+		}
+	}
+
+	response, responseErr = c.cfg.HTTPClient.Do(request)
+
+	if os.Getenv("TRACE_REDGOPHER") == "1" {
+		out, err := httputil.DumpResponse(response, true)
+		if err == nil {
+			log.Println(string(out))
+		}
+	}
+
+	return response, responseErr
 }
 
 // Change base path to allow switching to mocks
@@ -313,17 +336,17 @@ func (c *APIClient) prepareRequest(
 }
 
 func (c *APIClient) decode(v interface{}, b []byte, contentType string) (err error) {
-		if strings.Contains(contentType, "application/xml") {
-			if err = xml.Unmarshal(b, v); err != nil {
-				return err
-			}
-			return nil
-		} else if strings.Contains(contentType, "application/json") {
-			if err = json.Unmarshal(b, v); err != nil {
-				return err
-			}
-			return nil
+	if strings.Contains(contentType, "application/xml") {
+		if err = xml.Unmarshal(b, v); err != nil {
+			return err
 		}
+		return nil
+	} else if strings.Contains(contentType, "application/json") {
+		if err = json.Unmarshal(b, v); err != nil {
+			return err
+		}
+		return nil
+	}
 	return errors.New("undefined response type")
 }
 
