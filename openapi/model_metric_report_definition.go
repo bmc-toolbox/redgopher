@@ -34,7 +34,7 @@ type MetricReportDefinition struct {
 	Metrics []Metric `json:"Metrics,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// Specifies the actions to perform when a metric report is generated.
 	ReportActions []ReportActionsEnum `json:"ReportActions,omitempty"`
 	ReportUpdates ReportUpdatesEnum `json:"ReportUpdates,omitempty"`

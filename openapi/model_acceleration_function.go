@@ -32,7 +32,7 @@ type AccelerationFunction struct {
 	Manufacturer string `json:"Manufacturer,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The acceleration function power consumption.
 	PowerWatts int32 `json:"PowerWatts,omitempty"`
 	Status Status `json:"Status,omitempty"`

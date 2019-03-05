@@ -23,7 +23,7 @@ type Fpga struct {
 	HostInterface FpgaInterface `json:"HostInterface,omitempty"`
 	// The FPGA model.
 	Model string `json:"Model,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The number of the PCIe Virtual Functions.
 	PCIeVirtualFunctions int32 `json:"PCIeVirtualFunctions,omitempty"`
 	// This flag indicates if the FPGA firmware can be reprogrammed from the host using system software.

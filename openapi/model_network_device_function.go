@@ -41,7 +41,7 @@ type NetworkDeviceFunction struct {
 	// Capabilities of this network device function.
 	NetDevFuncCapabilities []NetworkDeviceTechnology `json:"NetDevFuncCapabilities,omitempty"`
 	NetDevFuncType NetworkDeviceTechnology `json:"NetDevFuncType,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	PhysicalPortAssignment IdRef `json:"PhysicalPortAssignment,omitempty"`
 	Status Status `json:"Status,omitempty"`
 	// Whether Single Root I/O Virtualization (SR-IOV) Virual Functions (VFs) are enabled for this Network Device Function.

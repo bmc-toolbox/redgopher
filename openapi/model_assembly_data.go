@@ -28,7 +28,7 @@ type AssemblyData struct {
 	Model string `json:"Model,omitempty"`
 	// Name of the Assembly.
 	Name string `json:"Name,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// Part number of the Assembly.
 	PartNumber string `json:"PartNumber,omitempty"`
 	PhysicalContext IdRef `json:"PhysicalContext,omitempty"`

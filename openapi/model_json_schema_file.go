@@ -30,7 +30,7 @@ type JsonSchemaFile struct {
 	Location []Location `json:"Location"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The @odata.type name this schema describes.
 	Schema string `json:"Schema"`
 }

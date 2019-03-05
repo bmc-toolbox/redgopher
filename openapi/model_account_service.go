@@ -43,7 +43,7 @@ type AccountService struct {
 	MinPasswordLength int32 `json:"MinPasswordLength,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	PrivilegeMap IdRef `json:"PrivilegeMap,omitempty"`
 	Roles IdRef `json:"Roles,omitempty"`
 	// Indicates whether this service is enabled.  If set to false, the AccountService is disabled.  This means no users can be created, deleted or modified.  Any service attempting to access the AccountService resource (for example, the Session Service) will fail.  New sessions cannot be started when the service is disabled. However, established sessions may still continue operating. This does not affect Basic AUTH connections.

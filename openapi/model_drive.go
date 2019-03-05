@@ -54,7 +54,7 @@ type Drive struct {
 	Name string `json:"Name"`
 	// The speed which this drive is currently communicating to the storage controller in Gigabits per second.
 	NegotiatedSpeedGbs float32 `json:"NegotiatedSpeedGbs,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The operations currently running on the Drive.
 	Operations []Operations `json:"Operations,omitempty"`
 	// The part number for this drive.

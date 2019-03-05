@@ -14,7 +14,7 @@ type Authentication struct {
 	AuthenticationType AuthenticationTypes `json:"AuthenticationType,omitempty"`
 	// This property is used with a PATCH or PUT to write a base64 encoded version of the kerberos keytab for the account.  This property is null on a GET.
 	KerberosKeytab string `json:"KerberosKeytab,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// This property is used with a PATCH or PUT to write the password for the account service.  This property is null on a GET.
 	Password string `json:"Password,omitempty"`
 	// This property is used with a PATCH or PUT to write the token for the account.  This property is null on a GET.

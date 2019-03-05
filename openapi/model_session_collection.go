@@ -29,5 +29,6 @@ type SessionCollection struct {
 	MembersodataNextLink string `json:"Members@odata.nextLink,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	// HP ILO5s return more than just a string in the Oem field.
+	Oem Oem `json:"Oem,omitempty"`
 }

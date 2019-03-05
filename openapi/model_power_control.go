@@ -17,7 +17,7 @@ type PowerControl struct {
 	MemberId string `json:"MemberId"`
 	// Power Control Function name.
 	Name string `json:"Name,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	PhysicalContext IdRef `json:"PhysicalContext,omitempty"`
 	// The total amount of power that has been allocated (or budegeted)to  chassis resources.
 	PowerAllocatedWatts float32 `json:"PowerAllocatedWatts,omitempty"`

@@ -32,7 +32,7 @@ type Port struct {
 	MaxSpeedGbps float32 `json:"MaxSpeedGbps,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// This is the label of this port on the physical switch package.
 	PortId string `json:"PortId,omitempty"`
 	PortProtocol IdRef `json:"PortProtocol,omitempty"`

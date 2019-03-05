@@ -23,7 +23,7 @@ type Session2 struct {
 	Id string `json:"Id"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// This property is used in a POST to specify a password when creating a new session.  This property is null on a GET.
 	Password string `json:"Password,omitempty"`
 	// The UserName for the account for this session.

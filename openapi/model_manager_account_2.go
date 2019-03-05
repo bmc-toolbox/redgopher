@@ -28,7 +28,7 @@ type ManagerAccount2 struct {
 	Locked bool `json:"Locked,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// This property is used with a PATCH or PUT to write the password for the account.  This property is null on a GET.
 	Password string `json:"Password,omitempty"`
 	// This property contains the Role for this account.

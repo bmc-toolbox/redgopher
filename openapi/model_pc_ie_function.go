@@ -35,7 +35,7 @@ type PcIeFunction struct {
 	Links Links2 `json:"Links,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The Revision ID of this PCIe function.
 	RevisionId string `json:"RevisionId,omitempty"`
 	Status Status `json:"Status,omitempty"`

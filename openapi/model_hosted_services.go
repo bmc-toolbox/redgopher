@@ -11,6 +11,6 @@ package openapi
 
 // This object describes services that may be running or installed on the system.
 type HostedServices struct {
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	StorageServices IdRef `json:"StorageServices,omitempty"`
 }

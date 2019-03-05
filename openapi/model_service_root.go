@@ -35,7 +35,7 @@ type ServiceRoot struct {
 	Managers IdRef `json:"Managers,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The product associated with this Redfish service.
 	Product string `json:"Product,omitempty"`
 	ProtocolFeaturesSupported ProtocolFeaturesSupported `json:"ProtocolFeaturesSupported,omitempty"`

@@ -48,7 +48,7 @@ type ResourceBlock struct {
 	NetworkInterfaces []IdRef `json:"NetworkInterfaces,omitempty"`
 	// The number of items in a collection.
 	NetworkInterfacesodataCount int32 `json:"NetworkInterfaces@odata.count,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// An array of references to the Processors available in this Resource Block.
 	Processors []IdRef `json:"Processors,omitempty"`
 	// The number of items in a collection.

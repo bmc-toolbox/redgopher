@@ -38,7 +38,7 @@ type Temperature struct {
 	MinReadingRangeTemp float32 `json:"MinReadingRangeTemp,omitempty"`
 	// Temperature sensor name.
 	Name string `json:"Name,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	PhysicalContext IdRef `json:"PhysicalContext,omitempty"`
 	// Temperature.
 	ReadingCelsius float32 `json:"ReadingCelsius,omitempty"`

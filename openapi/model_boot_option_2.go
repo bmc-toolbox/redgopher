@@ -31,7 +31,7 @@ type BootOption2 struct {
 	Id string `json:"Id"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The ID(s) of the resources associated with this Boot Option.
 	RelatedItem []IdRef2 `json:"RelatedItem,omitempty"`
 	// The number of items in a collection.

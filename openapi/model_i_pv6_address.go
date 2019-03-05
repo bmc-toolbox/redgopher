@@ -15,6 +15,6 @@ type IPv6Address struct {
 	Address string `json:"Address,omitempty"`
 	AddressOrigin IPv6AddressOrigin `json:"AddressOrigin,omitempty"`
 	AddressState AddressState `json:"AddressState,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	PrefixLength float32 `json:"PrefixLength,omitempty"`
 }

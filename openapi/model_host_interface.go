@@ -47,6 +47,6 @@ type HostInterface struct {
 	// The name of the resource or array element.
 	Name string `json:"Name"`
 	NetworkProtocol IdRef `json:"NetworkProtocol,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	Status Status `json:"Status,omitempty"`
 }

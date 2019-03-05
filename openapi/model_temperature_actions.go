@@ -11,5 +11,5 @@ package openapi
 
 // The available actions for this resource.
 type TemperatureActions struct {
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 }

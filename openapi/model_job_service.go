@@ -33,7 +33,7 @@ type JobService struct {
 	Log IdRef `json:"Log,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	ServiceCapabilities JobServiceCapabilities `json:"ServiceCapabilities,omitempty"`
 	// This indicates whether this service is enabled.
 	ServiceEnabled bool `json:"ServiceEnabled,omitempty"`

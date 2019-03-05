@@ -19,7 +19,7 @@ type ControllerLinks struct {
 	NetworkPorts []IdRef `json:"NetworkPorts,omitempty"`
 	// The number of items in a collection.
 	NetworkPortsodataCount int32 `json:"NetworkPorts@odata.count,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// An array of references to the PCIeDevices associated with this Network Controller.
 	PCIeDevices []IdRef `json:"PCIeDevices,omitempty"`
 	// The number of items in a collection.

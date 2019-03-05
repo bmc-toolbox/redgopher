@@ -83,7 +83,7 @@ type Memory struct {
 	Name string `json:"Name"`
 	// Total size of the non-volatile portion memory in MiB.
 	NonVolatileSizeMiB int32 `json:"NonVolatileSizeMiB,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// Memory modes supported by the Memory.
 	OperatingMemoryModes []OperatingMemoryModes `json:"OperatingMemoryModes,omitempty"`
 	// Operating speed of Memory in MHz or MT/s as appropriate.

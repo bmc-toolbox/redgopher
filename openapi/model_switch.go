@@ -40,7 +40,7 @@ type Switch struct {
 	Model string `json:"Model,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The part number for this switch.
 	PartNumber string `json:"PartNumber,omitempty"`
 	Ports IdRef `json:"Ports,omitempty"`

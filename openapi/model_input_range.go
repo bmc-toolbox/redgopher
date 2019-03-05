@@ -20,7 +20,7 @@ type InputRange struct {
 	MinimumFrequencyHz float32 `json:"MinimumFrequencyHz,omitempty"`
 	// The minimum line input voltage at which this power supply input range is effective.
 	MinimumVoltage float32 `json:"MinimumVoltage,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The maximum capacity of this Power Supply when operating in this input range.
 	OutputWattage float32 `json:"OutputWattage,omitempty"`
 }

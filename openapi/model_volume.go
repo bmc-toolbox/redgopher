@@ -37,7 +37,7 @@ type Volume struct {
 	Links Links2 `json:"Links,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The operations currently running on the Volume.
 	Operations []Operation `json:"Operations,omitempty"`
 	// The size in bytes of this Volume's optimum IO size.

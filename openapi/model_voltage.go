@@ -27,7 +27,7 @@ type Voltage struct {
 	MinReadingRange float32 `json:"MinReadingRange,omitempty"`
 	// Voltage sensor name.
 	Name string `json:"Name,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	PhysicalContext IdRef `json:"PhysicalContext,omitempty"`
 	// The present reading of the voltage sensor.
 	ReadingVolts float32 `json:"ReadingVolts,omitempty"`

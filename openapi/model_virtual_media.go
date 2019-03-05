@@ -35,7 +35,7 @@ type VirtualMedia struct {
 	MediaTypes []MediaType `json:"MediaTypes,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The password to be used when accessing the URI specified by the Image parameter. This property is null on a GET.
 	Password string `json:"Password,omitempty"`
 	TransferMethod TransferMethod `json:"TransferMethod,omitempty"`

@@ -30,7 +30,7 @@ type Role struct {
 	IsPredefined bool `json:"IsPredefined,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The OEM privileges that this role includes.
 	OemPrivileges []string `json:"OemPrivileges,omitempty"`
 	// This property contains the name of the Role.

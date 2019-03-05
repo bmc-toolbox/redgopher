@@ -17,7 +17,7 @@ type ConnectedEntity struct {
 	EntityType EntityType `json:"EntityType,omitempty"`
 	// Identifiers for the remote entity.
 	Identifiers []Identifier2 `json:"Identifiers,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The Class Code, Subclass code, and Programming Interface code of this PCIe function.
 	PciClassCode string `json:"PciClassCode,omitempty"`
 	// The PCI ID of the connected entity.

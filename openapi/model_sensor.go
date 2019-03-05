@@ -45,7 +45,7 @@ type Sensor struct {
 	MinAllowableOperatingValue float32 `json:"MinAllowableOperatingValue,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The peak reading value for this sensor.
 	PeakReading float32 `json:"PeakReading,omitempty"`
 	// The time at which the Peak Reading value occurred.

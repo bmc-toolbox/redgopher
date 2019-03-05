@@ -13,6 +13,6 @@ package openapi
 type IPv6GatewayStaticAddress struct {
 	// A valid IPv6 address.
 	Address string `json:"Address"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	PrefixLength int32 `json:"PrefixLength,omitempty"`
 }

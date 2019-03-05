@@ -26,7 +26,7 @@ type Power struct {
 	Id string `json:"Id"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// This is the definition for power control function (power reading/limiting).
 	PowerControl []PowerControl `json:"PowerControl,omitempty"`
 	// The number of items in a collection.

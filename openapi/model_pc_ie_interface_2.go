@@ -16,6 +16,6 @@ type PcIeInterface2 struct {
 	// This is the number of PCIe lanes supported by this device.
 	MaxLanes int32 `json:"MaxLanes,omitempty"`
 	MaxPCIeType PcIeTypes `json:"MaxPCIeType,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	PCIeType PcIeTypes `json:"PCIeType,omitempty"`
 }

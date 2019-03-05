@@ -34,7 +34,7 @@ type EventService struct {
 	Id string `json:"Id"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// A list of the Prefixes of the Message Registries that can be used for the RegistryPrefix property on a subscription.
 	RegistryPrefixes []string `json:"RegistryPrefixes,omitempty"`
 	// A list of @odata.type values (Schema names) that can be specified in a ResourceType on a subscription.

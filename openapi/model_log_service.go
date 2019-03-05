@@ -37,7 +37,7 @@ type LogService struct {
 	MaxNumberOfRecords int32 `json:"MaxNumberOfRecords,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	OverWritePolicy OverWritePolicy `json:"OverWritePolicy,omitempty"`
 	// This indicates whether this service is enabled.
 	ServiceEnabled bool `json:"ServiceEnabled,omitempty"`

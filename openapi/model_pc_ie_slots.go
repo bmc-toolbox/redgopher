@@ -26,7 +26,7 @@ type PcIeSlots struct {
 	Id string `json:"Id"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// An array of PCI Slot information.
 	Slots []PcIeSlot `json:"Slots,omitempty"`
 }

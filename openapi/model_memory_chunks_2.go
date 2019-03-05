@@ -32,5 +32,5 @@ type MemoryChunks2 struct {
 	MemoryChunkSizeMiB float32 `json:"MemoryChunkSizeMiB,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 }

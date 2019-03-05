@@ -35,7 +35,7 @@ type NetworkAdapter struct {
 	Name string `json:"Name"`
 	NetworkDeviceFunctions IdRef `json:"NetworkDeviceFunctions,omitempty"`
 	NetworkPorts IdRef `json:"NetworkPorts,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// Part number for this network adapter.
 	PartNumber string `json:"PartNumber,omitempty"`
 	// The manufacturer SKU for this network adapter.

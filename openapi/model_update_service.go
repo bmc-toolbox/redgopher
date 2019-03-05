@@ -36,7 +36,7 @@ type UpdateService struct {
 	Id string `json:"Id"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// This indicates whether this service is enabled.
 	ServiceEnabled bool `json:"ServiceEnabled,omitempty"`
 	SoftwareInventory IdRef `json:"SoftwareInventory,omitempty"`

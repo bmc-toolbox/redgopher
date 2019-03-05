@@ -37,7 +37,7 @@ type ManagerNetworkProtocol struct {
 	NTP NtpProtocol `json:"NTP,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	RDP Protocol `json:"RDP,omitempty"`
 	RFB Protocol `json:"RFB,omitempty"`
 	SNMP Protocol `json:"SNMP,omitempty"`

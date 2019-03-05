@@ -47,7 +47,7 @@ type LogEntry struct {
 	MessageId string `json:"MessageId,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// If the LogEntryCode type is OEM, this will contain the OEM-specific entry code.
 	OemLogEntryCode string `json:"OemLogEntryCode,omitempty"`
 	// If the EntryType is Oem, this will contain more information about the record format from the Oem.

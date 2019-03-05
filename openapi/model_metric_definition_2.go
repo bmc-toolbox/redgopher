@@ -49,7 +49,7 @@ type MetricDefinition2 struct {
 	MinReadingRange float32 `json:"MinReadingRange,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	PhysicalContext IdRef `json:"PhysicalContext,omitempty"`
 	// Number of significant digits in the metric reading.
 	Precision int32 `json:"Precision,omitempty"`

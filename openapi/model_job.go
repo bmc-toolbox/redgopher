@@ -41,7 +41,7 @@ type Job struct {
 	Messages []IdRef `json:"Messages,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	Payload Payload2 `json:"Payload,omitempty"`
 	// The completion percentage of this job.
 	PercentComplete int32 `json:"PercentComplete,omitempty"`

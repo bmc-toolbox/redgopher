@@ -15,5 +15,5 @@ type EthernetInterface2 struct {
 	MaxLanes int32 `json:"MaxLanes,omitempty"`
 	// The maximum speed supported by this interface.
 	MaxSpeedMbps int32 `json:"MaxSpeedMbps,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 }

@@ -13,6 +13,6 @@ package openapi
 type Status struct {
 	Health Health `json:"Health,omitempty"`
 	HealthRollup Health `json:"HealthRollup,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	State State `json:"State,omitempty"`
 }

@@ -44,7 +44,7 @@ type Chassis struct {
 	// The name of the resource or array element.
 	Name string `json:"Name"`
 	NetworkAdapters IdRef `json:"NetworkAdapters,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	PCIeSlots IdRef `json:"PCIeSlots,omitempty"`
 	// The part number of the chassis.
 	PartNumber string `json:"PartNumber,omitempty"`

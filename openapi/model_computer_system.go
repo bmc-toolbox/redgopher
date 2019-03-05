@@ -50,7 +50,7 @@ type ComputerSystem struct {
 	// The name of the resource or array element.
 	Name string `json:"Name"`
 	NetworkInterfaces IdRef `json:"NetworkInterfaces,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// A reference to a collection of PCIe Devices used by this computer system.
 	PCIeDevices []IdRef `json:"PCIeDevices,omitempty"`
 	// The number of items in a collection.

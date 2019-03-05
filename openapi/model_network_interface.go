@@ -29,6 +29,6 @@ type NetworkInterface struct {
 	Name string `json:"Name"`
 	NetworkDeviceFunctions IdRef `json:"NetworkDeviceFunctions,omitempty"`
 	NetworkPorts IdRef `json:"NetworkPorts,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	Status Status `json:"Status,omitempty"`
 }

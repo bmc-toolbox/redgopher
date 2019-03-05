@@ -26,7 +26,7 @@ type SessionService struct {
 	Id string `json:"Id"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// This indicates whether this service is enabled.  If set to false, the Session Service is disabled, and new sessions cannot be created, old sessions cannot be deleted, and established sessions may continue operating.
 	ServiceEnabled bool `json:"ServiceEnabled,omitempty"`
 	// This is the number of seconds of inactivity that a session may have before the session service closes the session due to inactivity.

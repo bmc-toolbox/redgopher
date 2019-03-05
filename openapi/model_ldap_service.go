@@ -11,6 +11,6 @@ package openapi
 
 // Contains settings for parsing a generic LDAP service.
 type LdapService struct {
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	SearchSettings LdapSearchSettings `json:"SearchSettings,omitempty"`
 }

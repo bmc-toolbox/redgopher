@@ -47,7 +47,7 @@ type NetworkPort struct {
 	NetDevFuncMinBWAlloc []NetDevFuncMinBwAlloc `json:"NetDevFuncMinBWAlloc,omitempty"`
 	// The number of ports not on this adapter that this port has discovered.
 	NumberDiscoveredRemotePorts int32 `json:"NumberDiscoveredRemotePorts,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The physical port number label for this port.
 	PhysicalPortNumber string `json:"PhysicalPortNumber,omitempty"`
 	// The largest maximum transmission unit (MTU) that can be configured for this network port.

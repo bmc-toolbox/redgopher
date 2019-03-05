@@ -14,5 +14,5 @@ type Location2 struct {
 	Info string `json:"Info,omitempty"`
 	// This represents the format of the Info property.
 	InfoFormat string `json:"InfoFormat,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 }

@@ -17,7 +17,7 @@ type Message struct {
 	MessageArgs []string `json:"MessageArgs,omitempty"`
 	// This is the key for this message which can be used to look up the message in a message registry.
 	MessageId string `json:"MessageId"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// This is an array of properties described by the message.
 	RelatedProperties []string `json:"RelatedProperties,omitempty"`
 	// Used to provide suggestions on how to resolve the situation that caused the error.

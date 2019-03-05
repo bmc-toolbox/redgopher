@@ -35,7 +35,7 @@ type Certificate2 struct {
 	KeyUsage []KeyUsage `json:"KeyUsage,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	Subject Identifier `json:"Subject,omitempty"`
 	// The date when the certificate is no longer valid.
 	ValidNotAfter time.Time `json:"ValidNotAfter,omitempty"`

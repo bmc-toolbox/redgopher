@@ -37,7 +37,7 @@ type PcIeDevice struct {
 	Model string `json:"Model,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	PCIeInterface PcIeInterface2 `json:"PCIeInterface,omitempty"`
 	// The part number for this PCIe device.
 	PartNumber string `json:"PartNumber,omitempty"`

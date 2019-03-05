@@ -32,7 +32,7 @@ type MetricReport struct {
 	MetricValues []MetricValue `json:"MetricValues,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The current sequence identifier for this metric report.
 	ReportSequence string `json:"ReportSequence"`
 	// The time associated with the metric report in its entirety.  The time of the metric report may be relevant when the time of individual metrics are minimally different.

@@ -32,7 +32,7 @@ type StorageController struct {
 	Model string `json:"Model,omitempty"`
 	// The name of the Storage Controller.
 	Name string `json:"Name,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	PCIeInterface PcIeInterface `json:"PCIeInterface,omitempty"`
 	// The part number for this storage controller.
 	PartNumber string `json:"PartNumber,omitempty"`

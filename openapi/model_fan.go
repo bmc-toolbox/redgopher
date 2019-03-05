@@ -38,7 +38,7 @@ type Fan struct {
 	Model string `json:"Model,omitempty"`
 	// Name of the fan.
 	Name string `json:"Name,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The part number for this Fan.
 	PartNumber string `json:"PartNumber,omitempty"`
 	PhysicalContext IdRef `json:"PhysicalContext,omitempty"`

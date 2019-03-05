@@ -61,7 +61,7 @@ type EthernetInterface struct {
 	Name string `json:"Name"`
 	// This represents DNS name servers that are currently in use on this interface.
 	NameServers []string `json:"NameServers,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	PermanentMACAddress string `json:"PermanentMACAddress,omitempty"`
 	// This is the current speed in Mbps of this interface.
 	SpeedMbps int32 `json:"SpeedMbps,omitempty"`

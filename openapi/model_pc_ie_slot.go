@@ -15,7 +15,7 @@ type PcIeSlot struct {
 	Lanes int32 `json:"Lanes,omitempty"`
 	Links PcIeLinks `json:"Links,omitempty"`
 	Location Location `json:"Location,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	PCIeType PcIeTypes `json:"PCIeType,omitempty"`
 	SlotType SlotTypes `json:"SlotType,omitempty"`
 	Status Status `json:"Status,omitempty"`

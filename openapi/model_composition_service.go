@@ -30,7 +30,7 @@ type CompositionService struct {
 	Id string `json:"Id"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	ResourceBlocks IdRef `json:"ResourceBlocks,omitempty"`
 	ResourceZones IdRef `json:"ResourceZones,omitempty"`
 	// This indicates whether this service is enabled.

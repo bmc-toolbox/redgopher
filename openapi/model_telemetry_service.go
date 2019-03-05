@@ -34,7 +34,7 @@ type TelemetryService struct {
 	MinCollectionInterval string `json:"MinCollectionInterval,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	Status Status `json:"Status,omitempty"`
 	// The functions that can be performed over each metric.
 	SupportedCollectionFunctions []CollectionFunction `json:"SupportedCollectionFunctions,omitempty"`

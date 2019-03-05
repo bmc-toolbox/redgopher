@@ -11,6 +11,6 @@ package openapi
 
 // Contains references to other resources that are related to this resource.
 type ManagerAccount2Links struct {
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	Role IdRef `json:"Role,omitempty"`
 }

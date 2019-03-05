@@ -32,7 +32,7 @@ type SerialInterface struct {
 	InterfaceEnabled bool `json:"InterfaceEnabled,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	Parity Parity `json:"Parity,omitempty"`
 	PinOut PinOut `json:"PinOut,omitempty"`
 	SignalType SignalType `json:"SignalType,omitempty"`

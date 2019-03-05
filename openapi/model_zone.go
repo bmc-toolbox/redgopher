@@ -29,6 +29,6 @@ type Zone struct {
 	Links Links2 `json:"Links,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	Status Status `json:"Status,omitempty"`
 }

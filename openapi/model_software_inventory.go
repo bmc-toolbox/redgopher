@@ -33,7 +33,7 @@ type SoftwareInventory struct {
 	Manufacturer string `json:"Manufacturer,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The ID(s) of the resources associated with this software inventory item.
 	RelatedItem []IdRef `json:"RelatedItem,omitempty"`
 	// The number of items in a collection.

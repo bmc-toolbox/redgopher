@@ -15,6 +15,6 @@ type IPv4Address2 struct {
 	AddressOrigin IPv4AddressOrigin `json:"AddressOrigin,omitempty"`
 	// This is the IPv4 gateway for this address.
 	Gateway string `json:"Gateway,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	SubnetMask string `json:"SubnetMask,omitempty"`
 }

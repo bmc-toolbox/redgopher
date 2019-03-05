@@ -42,7 +42,7 @@ type ProcessorMetrics struct {
 	LocalMemoryBandwidthBytes int32 `json:"LocalMemoryBandwidthBytes,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The remote memory bandwidth usage in bytes.
 	RemoteMemoryBandwidthBytes int32 `json:"RemoteMemoryBandwidthBytes,omitempty"`
 	// The temperature of the processor.

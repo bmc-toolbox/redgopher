@@ -15,5 +15,5 @@ type Links2 struct {
 	Certificates []IdRef `json:"Certificates,omitempty"`
 	// The number of items in a collection.
 	CertificatesodataCount int32 `json:"Certificates@odata.count,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 }

@@ -30,7 +30,7 @@ type MessageRegistryFile struct {
 	Location []Location `json:"Location"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The Registry Name, Major, and Minor version.  This Registry can reference any type of Registry, such as a Message Registry, Privilege Registry, or Attribute Registry.
 	Registry string `json:"Registry"`
 }

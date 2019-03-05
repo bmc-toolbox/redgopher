@@ -38,7 +38,7 @@ type PowerSupply struct {
 	Model string `json:"Model,omitempty"`
 	// The name of the Power Supply.
 	Name string `json:"Name,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// The part number for this Power Supply.
 	PartNumber string `json:"PartNumber,omitempty"`
 	// The maximum capacity of this Power Supply.

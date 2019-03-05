@@ -17,5 +17,4 @@ const (
 	AccountProviderTypesACTIVE_DIRECTORY_SERVICE AccountProviderTypes = "ActiveDirectoryService"
 	AccountProviderTypesLDAP_SERVICE             AccountProviderTypes = "LDAPService"
 	AccountProviderTypesOEM                      AccountProviderTypes = "OEM"
-	Oem                                          string               = "Oem"
 )

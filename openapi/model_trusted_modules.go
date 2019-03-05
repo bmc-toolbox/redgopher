@@ -17,6 +17,6 @@ type TrustedModules struct {
 	FirmwareVersion2 string `json:"FirmwareVersion2,omitempty"`
 	InterfaceType InterfaceType `json:"InterfaceType,omitempty"`
 	InterfaceTypeSelection InterfaceTypeSelection `json:"InterfaceTypeSelection,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	Status Status `json:"Status,omitempty"`
 }

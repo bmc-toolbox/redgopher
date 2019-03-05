@@ -30,7 +30,7 @@ type Thermal struct {
 	Id string `json:"Id"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// This structure is used to show redundancy for fans.  The Component ids will reference the members of the redundancy groups.
 	Redundancy []IdRef `json:"Redundancy,omitempty"`
 	// The number of items in a collection.

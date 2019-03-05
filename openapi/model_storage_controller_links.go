@@ -15,7 +15,7 @@ type StorageControllerLinks struct {
 	Endpoints []IdRef `json:"Endpoints,omitempty"`
 	// The number of items in a collection.
 	EndpointsodataCount int32 `json:"Endpoints@odata.count,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// An array of references to the StorageServices that connect to this controller.
 	StorageServices []IdRef `json:"StorageServices,omitempty"`
 	// The number of items in a collection.

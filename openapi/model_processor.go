@@ -41,7 +41,7 @@ type Processor struct {
 	Model string `json:"Model,omitempty"`
 	// The name of the resource or array element.
 	Name string `json:"Name"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	ProcessorArchitecture ProcessorArchitecture `json:"ProcessorArchitecture,omitempty"`
 	ProcessorId ProcessorId `json:"ProcessorId,omitempty"`
 	// The memory directly attached or integrated witin this Procesor.

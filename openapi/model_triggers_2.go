@@ -33,7 +33,7 @@ type Triggers2 struct {
 	// The name of the resource or array element.
 	Name string `json:"Name"`
 	NumericThresholds Thresholds2 `json:"NumericThresholds,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	Status Status `json:"Status,omitempty"`
 	// This property specifies the actions to perform when the trigger occurs.
 	TriggerActions []TriggerActionEnum `json:"TriggerActions,omitempty"`

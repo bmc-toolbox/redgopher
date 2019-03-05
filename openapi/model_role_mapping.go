@@ -13,7 +13,7 @@ package openapi
 type RoleMapping struct {
 	// The name of the local role in which to map the remote user or group.
 	LocalRole string `json:"LocalRole,omitempty"`
-	Oem string `json:"Oem,omitempty"`
+	Oem Oem `json:"Oem,omitempty"`
 	// This property is the name of the remote group (or in the case of a Redfish Service, remote role) that will be mapped to the local role referenced by this entity.
 	RemoteGroup string `json:"RemoteGroup,omitempty"`
 	// This property is the name of the remote user that will be mapped to the local role referenced by this entity.
