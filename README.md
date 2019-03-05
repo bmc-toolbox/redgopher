@@ -1,3 +1,13 @@
+#### Method compatibility between BMCs
+
+| Dell iDRAC9         |  HP iLO5            | Method          |
+|  :-----------:      |  :-----:            | :--------------:| 
+|  404                |  :heavy_check_mark: | RedfishV1SessionServiceSessionsGet |
+|  :heavy_check_mark: |  :heavy_check_mark: | RedfishV1ManagersManagerIdNetworkProtocolGet |
+
+- Dell iDRAC9 version 3.21.26.22
+- HP iLO5     version 1.40
+
 #### Generate go client from redfish spec
 
 1. Retrieve redfish schema.
