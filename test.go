@@ -34,8 +34,9 @@ func main() {
 	}
 
 	cfg := &openapi.Configuration{
-		BasePath:   fmt.Sprintf("http://%s", ip),
+		BasePath:   fmt.Sprintf("https://%s", ip),
 		HTTPClient: &http.Client{Transport: tr, CheckRedirect: checkRedirect},
+		UserAgent:  "redgopher",
 	}
 
 	client := openapi.NewAPIClient(cfg)
@@ -44,14 +45,14 @@ func main() {
 	basicAuth := openapi.BasicAuth{UserName: user, Password: pass}
 	ctx2 := context.WithValue(ctx, openapi.ContextBasicAuth, basicAuth)
 
-	s, _, err := client.DefaultApi.RedfishV1SessionServiceSessionsGet(ctx2)
-	if err != nil {
-		log.Fatal(err)
-	}
+	//s, _, err := client.DefaultApi.RedfishV1SessionServiceSessionsGet(ctx2)
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
 
-	log.Printf("%+v", s)
+	//log.Printf("%+v", s)
 
-	l, _, err := client.DefaultApi.RedfishV1ManagersManagerIdLogServicesGet(ctx2, "1")
+	l, _, err := client.DefaultApi.RedfishV1ManagersManagerIdNetworkProtocolGet(ctx2, "1")
 	if err != nil {
 		log.Fatal(err)
 	}
