@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"strings"
 
 	"github.com/bmc-toolbox/redgopher/openapi"
 )
@@ -43,19 +44,23 @@ func main() {
 
 	ctx := context.Background()
 	basicAuth := openapi.BasicAuth{UserName: user, Password: pass}
-	ctx2 := context.WithValue(ctx, openapi.ContextBasicAuth, basicAuth)
+	ctx = context.WithValue(ctx, openapi.ContextBasicAuth, basicAuth)
 
-	//s, _, err := client.DefaultApi.RedfishV1SessionServiceSessionsGet(ctx2)
-	//if err != nil {
-	//	log.Fatal(err)
-	//}
-
-	//log.Printf("%+v", s)
-
-	l, _, err := client.DefaultApi.RedfishV1ManagersManagerIdNetworkProtocolGet(ctx2, "1")
+	// here we get the manager we will need to use later
+	m, _, err := client.DefaultApi.RedfishV1ManagersGet(ctx)
 	if err != nil {
 		log.Fatal(err)
 	}
+	log.Printf("response: %+v", m)
 
-	log.Printf("%+v", l)
+	// for the manager we will use only the last part of the id
+	manager := strings.Split(m.Members[0].OdataId, "/")[strings.Count(m.Members[0].OdataId, "/")]
+	fmt.Printf("manager: %s\n", manager)
+
+	// here we use the manager as argument to retrieve the required data
+	l, _, err := client.DefaultApi.RedfishV1ManagersManagerIdNetworkProtocolGet(ctx, manager)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf("response: %+v", l)
 }
